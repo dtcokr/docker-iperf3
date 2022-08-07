@@ -1,7 +1,5 @@
 FROM alpine:3.16.1
 
-LABEL maintainer="Michel Labbe"
-
 # install iperf3 and create non-root user
 RUN apk add --no-cache iperf3 \
   && adduser -S iperf
